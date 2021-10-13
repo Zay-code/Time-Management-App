@@ -18,10 +18,10 @@ body{
     left: 0;
     height: 100%;
     width: 78px;
-    background: #008800 ;
+    background: #72BF6F ;
     padding: 6px 14px;
     transition: all 0.5s ease;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0;
 
 }
 .sidebar.active{
