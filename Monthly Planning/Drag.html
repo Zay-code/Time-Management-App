@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Drag.css">
+    <title>Time-Management</title>
+</head>
+
+<body>
+    <!-- Add a task modal -->
+    <div class="modal" id="todo_form">
+        <div class="header">
+            <div class="title">Add your task</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+          <label for="header">Add your task</label>
+          <br>
+            <input type="text" id="task" />
+            <input type="submit" value="Add Task" id="submit">
+            
+        </div>
+       
+    </div>
+    <!--  -->
+    <div class="todo-container">
+        <div class="status" id="no_status">
+          <h1>Add</h1>
+          <button id="add_btn" data-target-modal="#todo_form">Add Task</button>
+          <div class="to-do" draggable="true">
+            Create a deign for "" by the end of the MONTH
+            <span class="close">&times;</span>
+          </div>
+        </div>
+        <div class="status">
+          <h1>Jan</h1>
+        </div>
+        <div class="status">
+          <h1>Feb</h1>
+        </div>
+        <div class="status">
+          <h1>Mar</h1>
+        </div>
+        <div class="status">
+          <h1>Apr</h1>
+        </div>
+        <div class="status">
+          <h1>May</h1>
+        </div>
+        <div class="status">
+          <h1>Jun</h1>
+        </div>
+        <div class="status">
+          <h1>Jul</h1>
+        </div>
+        <div class="status">
+          <h1>Aug</h1>
+        </div>
+        <div class="status">
+          <h1>Sept</h1>
+        </div>
+        <div class="status">
+          <h1>Oct</h1>
+        </div>
+        <div class="status">
+          <h1>Nov</h1>
+        </div>
+        <div class="status">
+          <h1>Dec</h1>
+        </div>
+
+      </div>
+    <div id="overlay"></div>
+    <script src="Drag.js"></script>
+</body>
+</html>
