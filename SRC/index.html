@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/Drag&Drop/Drag.css">
+    <script src="index.js"></script>
+    <title>Side-Nav</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxl-snapchat'></i>
+                <div class="logo-name">Name</div>
+            </div>
+            <i class='bx bx-menu' id="btn" onclick="buttOn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt' style='color:#ffffff'  ></i>
+                    <span class="link-name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="link-name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-message-alt' ></i>
+                    <span class="link-name">Message</span>
+                </a>
+                <span class="tooltip">Message</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-chat' ></i>
+                    <span class="link-name">Chat</span>
+                </a>
+                <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder' ></i>
+                    <span class="link-name">File Management</span>
+                </a>
+                <span class="tooltip">File</span>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <script >
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+        let search = document.querySelector('.bx-search');
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active")
+        }
+        search.onclick = function(){
+            sidebar.classList.toggle("active")
+        }
+
+        
+    </script>
+   
+</body>
+</html>
