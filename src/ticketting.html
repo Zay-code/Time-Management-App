@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="ticketting.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+        <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+        <title>Ticketting System</title>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-1">
+            <div class="container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "/images/Younglings-logo.png" alt = "Younglings Logo that contains the companies initials">
+                </a>
+                <div class = "order-lg-2 nav-btns ">
+                    <button type = "button" class = "btn position-relative">
+                        <img src="/images/facebook (4).svg" alt="">
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <img src="/images/instagram (2).svg" alt="">
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <img src="/images/linkedin.svg" alt="">
+                    </button>
+                    
+                </div>
+                
+                <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                    <ul class = "navbar-nav mx-auto text-center">
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "index.html">home</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "#schedule">schedule</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "#clocking">clock-in/clock-out</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "todo copy.html">to-do list</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "ticketting.html">ticket</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <!--  -->
+    </head>
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h2 class="d-flex align-items-center justify-content-center mt-5">Ticketting System</h2>
+
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="stuff">
+                        <div class="icon"><box-icon name='map' type='solid' ></box-icon></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>31 Lower Long Street, <br>Cape Town, <br>7925</p>
+                        </div>
+                   
+                </div>
+                <div class="stuff">
+                    <div class="icon"><box-icon name='phone-call' type='solid' ></box-icon></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>Joshua Schell (+27) 65 873 8753</p>
+                    </div>
+                </div>
+                <div class="stuff">
+                    <div class="icon"><box-icon name='gmail' type='logo' ></box-icon></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>younglings.africa@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="https://sheetdb.io/api/v1/9b6vpc538lcx9" method="POST" id="form" href="actionpage_php">
+                    <h2>Make an Enquiry</h2>
+                    <div class="inputBox">
+                        <input type="text" name="data[Name]" required="required" onchange="updateMessage(name, value)">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="data[E-mail]" required="required" onchange="updateMessage(name, value)">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" name="data[Problem]" onchange="updateMessage(name, value)"></textarea>
+                        <span>Type your message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send" onclick="sendEmail()">
+                    </div>
+                    <div class="inputBox">
+                        <input type="reset" name="" value="Reset">
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </section>
+        <footer class="text-center text-white bg-dark">
+            <div class="container p-4 pb-0">
+              <!-- Section: CTA -->
+              <section class="">
+                <h4 class="text-center text-uppercase d-flex justify-content-center align-items-center">Younglings.Africa</h4>
+                <br>
+                <p>Younglings-Time-Management-System, A tool created to assist in planning and organizing tasks. <br>
+                    Similarly, it can be used to ask someone for help with a problem by using the <a style="color: #008800;"href="ticketting.html">ticket button</a>.</p>
+              </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2021 Copyright:
+              <a style="color: #008800;" href="#">Younglings.Africa</a>
+            </div>
+          </footer>
+            
+        <script>
+            var form = document.getElementById('form');
+            form.addEventListener("submit", e => {
+              e.preventDefault();
+              fetch(form.action, {
+                  method : "POST",
+                  body: new FormData(document.getElementById("form")),
+              }).then(
+                  response => response.json()
+              ).then((html) => {
+                // you can put any JS code here
+                alert('Your ticket has been set please wait for a Fearless leader to reach out to you')
+              });
+            });
+          </script>
+          <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+          <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
+<!-- https://docs.google.com/spreadsheets/d/1KRVQzixSUhqOFXKQnEUhse5FwIac2ikce18LxvzOxTA/edit#gid=0 -->

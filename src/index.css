@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+:root{
+    --youngling-font: 'Poppins', sans-serif;
+    --younglings-color:#008800;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(77, 201, 60, 0.1);
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+.nav-link:hover{
+    color: var(--younglings-color) !important;
+    font-weight: 200;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    color: #008800 !important;
+}
+
+box-icon{
+    font-size: 15px !important;
+}
+
+#header{
+    background:linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.253)), url(/images/Temp-Background.jpg) top/cover no-repeat;
+    background-size: cover;
+}
+/* .heading{
+    top: 20px;
+    font-size: 100px !important;
+    text-shadow: 2px 2px  0px #000000;
+    color: var(--younglings-color);
+} */
+
+/* Footers Styling */
+footer h4{
+    color: var(--younglings-color) !important;
+    font-weight: bolder !important;
+    font-family: var(--youngling-font) !important;
+}
+
+footer p{
+    font-family: var(--youngling-font) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
+}

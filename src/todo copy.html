@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo copy.css" type="text/css" media="screen" charset="utf-8">   
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <a href="index.html"><box-icon name='arrow-back'></box-icon></a>
+      <div class="align-items-center justify-content-center">
+        <p>
+          <label for="new-task">Add Your Item</label>
+          <input type="text" class="form-control input-group col-md-8" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2" id="new-task"><button>Add</button>
+        </p> 
+      </div>
+     
+      
+      <h3>Todo:</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Do Task</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <!-- <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li> -->
+        
+      </ul>
+      
+      <h3>Completed:</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>Completed Task</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+
+    <footer class="text-center text-white bg-dark">
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <h4 class="text-center text-uppercase d-flex justify-content-center align-items-center">Younglings.Africa</h4>
+          <p>Younglings-Time-Management-System, A tool created to assist in planning and organizing tasks. <br>
+              Similarly, it can be used to ask someone for help with a problem by using the <a style="color: #008800;"href="#ticketing">ticket button</a>.</p>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a style="color: #008800;" href="#">Younglings.Africa</a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="todo copy.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <!-- <script src="/src/jquery-3.6.0.js"></script> -->
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDHbXujNLX1AsusaJBWVKUgYLjnbhm9Bsw",
+          authDomain: "to-do-list-afecd.firebaseapp.com",
+          projectId: "to-do-list-afecd",
+          storageBucket: "to-do-list-afecd.appspot.com",
+          messagingSenderId: "133853547630",
+          appId: "1:133853547630:web:c3b407cb0768e6aa316a7f",
+          measurementId: "G-P9QH3H0D2L"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script> -->
+  </body>
+</html>
